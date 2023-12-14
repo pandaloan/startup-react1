@@ -1,130 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <!-- Tell browsers not to scale the viewport automatically -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Connect4 HTML</title>
-    <link rel="icon" href="https://www.101computing.net/wp/wp-content/uploads/connect4.png" />
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
 
-    <!--script used to be here-->
-    <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="login.css" />
-
-    <!-- Include bootstrap CSS framework -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-      crossorigin="anonymous"
-    />
+    <title>Connect4 React</title>
   </head>
   <body>
-    <header class="container-fluid">
-      <nav class="navbar fixed-top navbar-dark">
-        <a class="navbar-brand" href="#">Connect4<sup>&reg;</sup></a>
-        <p>connected to the internet</p>
-        <p> + Nirvana Trivia</p>
-        <menu class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" href="index.html">Home</a>
-          </li>
-          <!--<li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="scores.html">Scores</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="play.html">Play!</a>
-          </li>-->
-        </menu>
-      </nav>
-    </header>
-    <!-- Use header, main, and footer elements to give semantic structure -->
-    <!--<header>
-      <h1>Connect4<sup>&reg;</sup></h1>
-      <h3>connected to the internet</h3>
-
-      <-- Navigation elements ->
-      <nav>
-        <-- Menu is a semantic alternative to <ul> that represents an interaction ->
-        <menu>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="scores.html">Scores</a></li>
-          <li><a href="play.html">Play!</a></li>
-        </menu>
-      </nav>
-
-      <-- Since we don't have the ability to style we use old style HTML to give some visual formatting ->
-      <hr />
-    </header>-->
-
-    <!--<main>  old main- before login.js and login.css were added- changed 11-20-23
-      <h1>Welcome</h1>
-      <p>Login to play</p>
-      <form method="get" action="play.html"> <!-get this to work-button link to play-->
-        <!--<label for="name">Name</label>->
-        <input type="text" id="name" placeholder="Your name here" />
-        <!-<button type="submit">Login</button>->
-        <button type="button" class="btn btn-primary" onclick="login()">Login</button>
-      </form>
-    </main> -->
-
-    <main> <!--new main - login.js and login.css added - created 11-20-23-->
-      <div>
-        <h1>Welcome to Connect4</h1>
-        <h4>+ Nirvana Trivia</h4>
-        <!-- Displayed when needing authentication -->
-        <div id="loginControls" style="display: none">
-          <div class="input-group mb-3">
-            <span class="input-group-text">@</span>
-            <input class="form-control" type="text" id="userName" placeholder="your@email.com" />
-          </div>
-          <div class="input-group mb-3">
-            <span class="input-group-text">🔒</span>
-            <input class="form-control" type="password" id="userPassword" placeholder="password" />
-          </div>
-          <button type="button" class="btn btn-primary" onclick="loginUser()">Login</button>
-          <button type="button" class="btn btn-primary" onclick="createUser()">Create</button>
-        </div>
-        <!-- Displayed when ready to play -->
-        <div id="playControls" style="display: none">
-          <div id="playerName"></div>
-          <button type="button" class="btn btn-primary" onclick="play()">Play!</button>
-          <button type="button" class="btn btn-secondary" onclick="logout()">Logout</button>
-        </div>
-      </div>
-
-      <!-- Error dialog -->
-      <div class="modal fade" id="msgModal" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content text-dark">
-            <div class="modal-body">error message here</div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
-
-    <!--<footer> class="bg-dark text-white-50">
-      <div class="container-fluid">
-      
-      <span class="text-reset">Author Name(s)</span>
-      <br />
-      <p>Albino Chipmunk</p>
-      <a href="https://github.com/pandaloan/startup.git">GitHub</a>
-    </footer>-->
-    <footer> <!--class="bg-dark text-white-50">-->
-      <div class="container-fluid">
-        <span class="text-reset">Author Name(s):</span>
-        <p>Albino Chipmunk</p>
-        <a class="text-reset" href="https://github.com/pandaloan/startup.git">GitHub</a>
-      </div>
-    </footer>
-    <script src="login.js"></script> <!--used to go to home.js-->
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div> <!--Notice that the div with an ID of root is where all the content will be injected. The script reference for index.jsx causes the injection of the top level component named App. To hook the index.html to our top level App component, we create the following index.jsx file.-->
+    <script type="module" src="/index.jsx"></script>
   </body>
 </html>
