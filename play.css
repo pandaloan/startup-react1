@@ -1,0 +1,125 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-width: 375px;
+  background-color: black;
+  color: blue;
+}
+
+header {
+  flex: 0 80px;
+  background-color: red;
+  color: rgb(235, 235, 83);
+}
+
+header .navbar-brand {
+  color: rgb(235, 235, 83);
+}
+
+
+main {
+  background-color: black;
+  color: lightblue
+}
+
+.Nirvana {
+  margin: 0 auto;
+  color: orange;
+}
+
+#board {
+  height: 540px;
+  width: 580px; /*was width 630px, height 540px*/
+  background-color: darkblue;
+  border: 10px solid blue;
+  
+  margin: 0 auto; /*was margin: 0 auto;*/
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tile {
+  height: 70px;
+  width: 70px;
+  margin: 5px; /*was 5px, or 0px*/
+
+ /* Circle */
+  background-color: lightskyblue;
+  border-radius: 50%;
+  border: 5px solid blue;
+}
+
+.red-piece {
+background-color: red;
+}
+
+.yellow-piece {
+background-color: yellow;
+}
+
+
+main .label {
+  color: lightblue;
+}
+
+li {
+  margin-left: 0px;
+  margin-right: 50px;
+  color: black;
+}
+
+
+
+menu {
+  flex: 1;
+  display: flex;
+  /*  overwrite Bootstrap so the menu does not wrap */
+  flex-direction: row !important;
+  list-style: none;
+  color: red;
+}
+
+footer {
+  flex: 0 30px;
+  background: rgb(235, 235, 83);
+  color: black;
+  font-style: italic;
+}
+
+
+#count {
+  /*color: rgb(246, 239, 158);*/
+  color: rgb(118, 190, 210)
+}
+
+.players {
+  flex: 1;
+  width: 100%;
+  padding: 0.5em;
+  color: rgb(118, 190, 210)
+}
+
+.player-name {
+  color: rgb(118, 190, 210);
+}
+
+#player-messages {
+  padding-top: 0.25em;
+  opacity: 0.7;
+  color: rgb(118, 190, 210)
+}
+
+.event {
+  color: rgb(69, 69, 69);
+}
+
+.player-event {
+  color: rgb(165, 220, 235);
+}
+
+.system-event {
+  color: rgb(221, 148, 40);
+}
+
+
+
